@@ -1,0 +1,314 @@
+{
+  "version": "2.1.0",
+  "language": "*",
+  "examples": [
+    {
+      "example_id": "ru_count_deals_2024",
+      "question": "Сколько сделок было в 2024 году?",
+      "language": "ru",
+      "script": "cyrillic",
+      "approval_status": "APPROVED",
+      "tags": [
+        "intent:count",
+        "subject:deals",
+        "metric:deal_count",
+        "date:2024"
+      ],
+      "test_fixture_id": "tests/test_rag.py::test_approved_query_examples_validate",
+      "prompt_version": "2.1",
+      "schema_version": "1.0",
+      "plan": {
+        "schema_version": "1.0",
+        "decision": "EXECUTE",
+        "language": "ru",
+        "script": "cyrillic",
+        "intent": "count",
+        "subject": "deals",
+        "metric": "deal_count",
+        "filters": [
+          {
+            "field": "deal_date",
+            "operator": "between",
+            "value": [
+              "2024-01-01",
+              "2024-12-31"
+            ]
+          }
+        ],
+        "group_by": [],
+        "order_by": [],
+        "limit": null,
+        "currency_mode": "not_applicable",
+        "entity_candidates": [],
+        "clarification": null,
+        "comparison": null
+      }
+    },
+    {
+      "example_id": "uz_latin_count_deals_2025",
+      "question": "2025-yilda nechta bitim bo'ldi?",
+      "language": "uz",
+      "script": "latin",
+      "approval_status": "APPROVED",
+      "tags": [
+        "intent:count",
+        "subject:deals",
+        "metric:deal_count",
+        "date:2025"
+      ],
+      "test_fixture_id": "tests/test_rag.py::test_approved_query_examples_validate",
+      "prompt_version": "2.1",
+      "schema_version": "1.0",
+      "plan": {
+        "schema_version": "1.0",
+        "decision": "EXECUTE",
+        "language": "uz",
+        "script": "latin",
+        "intent": "count",
+        "subject": "deals",
+        "metric": "deal_count",
+        "filters": [
+          {
+            "field": "deal_date",
+            "operator": "between",
+            "value": [
+              "2025-01-01",
+              "2025-12-31"
+            ]
+          }
+        ],
+        "group_by": [],
+        "order_by": [],
+        "limit": null,
+        "currency_mode": "not_applicable",
+        "entity_candidates": [],
+        "clarification": null,
+        "comparison": null
+      }
+    },
+    {
+      "example_id": "uz_cyrillic_count_deals_2025",
+      "question": "2025-йилда нечта битим бўлди?",
+      "language": "uz",
+      "script": "cyrillic",
+      "approval_status": "APPROVED",
+      "tags": [
+        "intent:count",
+        "subject:deals",
+        "metric:deal_count",
+        "date:2025"
+      ],
+      "test_fixture_id": "tests/test_rag.py::test_approved_query_examples_validate",
+      "prompt_version": "2.1",
+      "schema_version": "1.0",
+      "plan": {
+        "schema_version": "1.0",
+        "decision": "EXECUTE",
+        "language": "uz",
+        "script": "cyrillic",
+        "intent": "count",
+        "subject": "deals",
+        "metric": "deal_count",
+        "filters": [
+          {
+            "field": "deal_date",
+            "operator": "between",
+            "value": [
+              "2025-01-01",
+              "2025-12-31"
+            ]
+          }
+        ],
+        "group_by": [],
+        "order_by": [],
+        "limit": null,
+        "currency_mode": "not_applicable",
+        "entity_candidates": [],
+        "clarification": null,
+        "comparison": null
+      }
+    },
+    {
+      "example_id": "ru_sum_uzs_deals_2024",
+      "question": "Какая общая сумма сделок за 2024 год?",
+      "language": "ru",
+      "script": "cyrillic",
+      "approval_status": "APPROVED",
+      "tags": [
+        "intent:sum_amount",
+        "subject:deals",
+        "metric:amount_sum_uzs_converted",
+        "currency:UZS"
+      ],
+      "test_fixture_id": "tests/test_rag.py::test_approved_query_examples_validate",
+      "prompt_version": "2.1",
+      "schema_version": "1.0",
+      "plan": {
+        "schema_version": "1.0",
+        "decision": "EXECUTE",
+        "language": "ru",
+        "script": "cyrillic",
+        "intent": "sum_amount",
+        "subject": "deals",
+        "metric": "amount_sum_uzs_converted",
+        "filters": [
+          {
+            "field": "deal_date",
+            "operator": "between",
+            "value": [
+              "2024-01-01",
+              "2024-12-31"
+            ]
+          }
+        ],
+        "group_by": [],
+        "order_by": [],
+        "limit": null,
+        "currency_mode": "uzs_converted",
+        "entity_candidates": [],
+        "clarification": null,
+        "comparison": null
+      }
+    },
+    {
+      "example_id": "ru_top_sellers_2024",
+      "question": "Топ-5 продавцов по количеству сделок за 2024 год",
+      "language": "ru",
+      "script": "cyrillic",
+      "approval_status": "APPROVED",
+      "tags": [
+        "intent:top_n",
+        "subject:participants",
+        "metric:deal_count",
+        "side:seller"
+      ],
+      "test_fixture_id": "tests/test_rag.py::test_approved_query_examples_validate",
+      "prompt_version": "2.1",
+      "schema_version": "1.0",
+      "plan": {
+        "schema_version": "1.0",
+        "decision": "EXECUTE",
+        "language": "ru",
+        "script": "cyrillic",
+        "intent": "top_n",
+        "subject": "participants",
+        "metric": "deal_count",
+        "filters": [
+          {
+            "field": "deal_date",
+            "operator": "between",
+            "value": [
+              "2024-01-01",
+              "2024-12-31"
+            ]
+          }
+        ],
+        "group_by": [
+          "seller_inn"
+        ],
+        "order_by": [
+          {
+            "field": "metric",
+            "direction": "desc"
+          }
+        ],
+        "limit": 5,
+        "currency_mode": "not_applicable",
+        "entity_candidates": [],
+        "clarification": null,
+        "comparison": null
+      }
+    },
+    {
+      "example_id": "ru_count_export_deals_2025",
+      "question": "Сколько экспортных сделок было в 2025 году?",
+      "language": "ru",
+      "script": "cyrillic",
+      "approval_status": "APPROVED",
+      "tags": [
+        "intent:count",
+        "subject:deals",
+        "metric:deal_count",
+        "filter:contract_type"
+      ],
+      "test_fixture_id": "tests/test_rag.py::test_approved_query_examples_validate",
+      "prompt_version": "2.1",
+      "schema_version": "1.0",
+      "plan": {
+        "schema_version": "1.0",
+        "decision": "EXECUTE",
+        "language": "ru",
+        "script": "cyrillic",
+        "intent": "count",
+        "subject": "deals",
+        "metric": "deal_count",
+        "filters": [
+          {
+            "field": "deal_date",
+            "operator": "between",
+            "value": [
+              "2025-01-01",
+              "2025-12-31"
+            ]
+          },
+          {
+            "field": "contract_type",
+            "operator": "eq",
+            "value": "Экспортный"
+          }
+        ],
+        "group_by": [],
+        "order_by": [],
+        "limit": null,
+        "currency_mode": "not_applicable",
+        "entity_candidates": [],
+        "clarification": null,
+        "comparison": null
+      }
+    },
+    {
+      "example_id": "ru_volume_by_unit_2024",
+      "question": "Объём сделок по единицам измерения за 2024 год",
+      "language": "ru",
+      "script": "cyrillic",
+      "approval_status": "APPROVED",
+      "tags": [
+        "intent:sum_volume",
+        "subject:deals",
+        "metric:volume_sum_by_unit",
+        "group:unit_name"
+      ],
+      "test_fixture_id": "tests/test_rag.py::test_approved_query_examples_validate",
+      "prompt_version": "2.1",
+      "schema_version": "1.0",
+      "plan": {
+        "schema_version": "1.0",
+        "decision": "EXECUTE",
+        "language": "ru",
+        "script": "cyrillic",
+        "intent": "sum_volume",
+        "subject": "deals",
+        "metric": "volume_sum_by_unit",
+        "filters": [
+          {
+            "field": "deal_date",
+            "operator": "between",
+            "value": [
+              "2024-01-01",
+              "2024-12-31"
+            ]
+          }
+        ],
+        "group_by": [
+          "unit_name"
+        ],
+        "order_by": [],
+        "limit": null,
+        "currency_mode": "not_applicable",
+        "entity_candidates": [],
+        "clarification": null,
+        "comparison": null
+      }
+    }
+  ]
+}

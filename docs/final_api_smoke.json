@@ -1,0 +1,113 @@
+﻿{
+  "/api/v1/health": {
+    "http": 200,
+    "body": {
+      "status": "ok",
+      "version": "1.0.0",
+      "timestamp": "2026-11-05T12:43:13.719539Z"
+    }
+  },
+  "/api/v1/ready": {
+    "http": 200,
+    "body": {
+      "status": "ready",
+      "checks": {
+        "database": true,
+        "dataset": true,
+        "schema": true
+      },
+      "dataset_version": "sha256:96424654325b6c41074b67aa3919435747f9cbc029a7fe9bf5e2dd02810e8fab",
+      "dataset_cutoff": "2026-10-30"
+    }
+  },
+  "/api/v1/meta": {
+    "http": 200,
+    "body": {
+      "status": "ready",
+      "dataset_version": "sha256:96424654325b6c41074b67aa3919435747f9cbc029a7fe9bf5e2dd02810e8fab",
+      "dataset_cutoff": "2026-10-30",
+      "dataset_loaded_at": "2026-11-05 09:36:14.278575+05:00",
+      "total_deals": 500000,
+      "contracts": 6616,
+      "participants": 14392,
+      "brokers": 120,
+      "usd_rates": 1765,
+      "supported_languages": [
+        "ru",
+        "uz"
+      ],
+      "supported_locales": [
+        "ru",
+        "uz_latn",
+        "uz_cyrl"
+      ],
+      "planner_mode": "local"
+    }
+  },
+  "/api/v1/chat": {
+    "http": 200,
+    "body": {
+      "status": "FOUND",
+      "language": "uz",
+      "script": "latin",
+      "locale": "uz_latn",
+      "answer": "2024-yil uchun 106┬а647 ta bitim topildi.",
+      "data": {
+        "metric": "deal_count",
+        "value": 106647,
+        "unit": "ta bitim",
+        "currency": null,
+        "method": null,
+        "period": "2024-yil",
+        "rows": [
+          {
+            "label": null,
+            "value": 106647,
+            "unit": null,
+            "currency": null,
+            "group": {},
+            "fields": {}
+          }
+        ],
+        "notes": []
+      },
+      "clarification": null,
+      "evidence": {
+        "source_tables": [
+          "deals"
+        ],
+        "dataset_version": "sha256:96424654325b6c41074b67aa3919435747f9cbc029a7fe9bf5e2dd02810e8fab",
+        "dataset_cutoff": "2026-10-30",
+        "filters": [
+          {
+            "field": "deal_date",
+            "operator": "between",
+            "value": [
+              "2024-01-01",
+              "2024-12-31"
+            ]
+          }
+        ],
+        "metric": "COUNT(DISTINCT deals.deal_no)",
+        "matched_rows": 106647,
+        "grouping": [],
+        "currency_method": null,
+        "unit": null,
+        "execution_id": "req_28a071db165c443590026281f4614169",
+        "notes": []
+      },
+      "duration_ms": 177,
+      "request_id": "req_28a071db165c443590026281f4614169"
+    }
+  },
+  "secret_scan": {
+    "clean": true,
+    "tokens_checked": [
+      "gsk_",
+      "AIza",
+      "AKIA",
+      "BEGIN PRIVATE KEY",
+      "Authorization"
+    ]
+  }
+}

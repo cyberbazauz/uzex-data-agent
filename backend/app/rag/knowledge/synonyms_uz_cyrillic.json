@@ -1,0 +1,293 @@
+{
+  "language": "uz",
+  "script": "cyrillic",
+  "terms": [
+    {
+      "term": "битим",
+      "canonical": "deals",
+      "description": "Битимлар реестри ёзуви.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "битимлар",
+      "canonical": "deals",
+      "description": "Битимлар реестри ёзувлари.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "шартнома",
+      "canonical": "contracts",
+      "description": "Шартнома карточкаси.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "компания",
+      "canonical": "participants",
+      "description": "Савдо иштирокчиси.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "иштирокчи",
+      "canonical": "participants",
+      "description": "Сотувчи ёки харидор.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "сотувчи",
+      "canonical": "seller",
+      "description": "Сотувчи томони.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "харидор",
+      "canonical": "buyer",
+      "description": "Харидор томони.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "брокер",
+      "canonical": "brokers",
+      "description": "Брокерлик идораси.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "доллар курси",
+      "canonical": "usd_rates",
+      "description": "Бир АҚШ доллари учун сўм курси.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "нечта",
+      "canonical": "count",
+      "description": "Миқдор ҳақидаги савол.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "қанча",
+      "canonical": "count",
+      "description": "Миқдор ҳақидаги савол.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "сони",
+      "canonical": "count",
+      "description": "Ёзувлар ёки битимлар сони.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "сумма",
+      "canonical": "sum_amount",
+      "description": "Битимларнинг пул суммаси.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "қиймат",
+      "canonical": "sum_amount",
+      "description": "Битимларнинг пул қиймати.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "жами",
+      "canonical": "sum_amount",
+      "description": "Умумий йиғинди.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "ўртача",
+      "canonical": "average",
+      "description": "Ўртача қиймат.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "топ",
+      "canonical": "top_n",
+      "description": "Етакчилар рейтинги.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "рейтинг",
+      "canonical": "top_n",
+      "description": "Тартибланган рўйхат.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "энг кўп",
+      "canonical": "top_n",
+      "description": "Метрика бўйича энг юқори.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "динамика",
+      "canonical": "trend",
+      "description": "Даврлар бўйича ўзгариш.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "тренд",
+      "canonical": "trend",
+      "description": "Даврлар бўйича ўзгариш.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "таққосла",
+      "canonical": "compare",
+      "description": "Икки даврни солиштириш.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "солиштир",
+      "canonical": "compare",
+      "description": "Икки даврни солиштириш.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "ҳажм",
+      "canonical": "sum_volume",
+      "description": "Ўлчов бирлигидаги жисмоний ҳажм.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "етказилган",
+      "canonical": "delivered",
+      "description": "Факт бўйича етказилган миқдор.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "омбор ҳудуди",
+      "canonical": "warehouse_region",
+      "description": "Товар сақланадиган ҳудуд, компания ҳудуди эмас.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "компания ҳудуди",
+      "canonical": "company_region",
+      "description": "Компания рўйхатдан ўтган ҳудуд, омбор эмас.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "экспорт",
+      "canonical": "contract_type: Экспортный",
+      "description": "Экспорт шартномаси.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "ички",
+      "canonical": "contract_type: Внутренний",
+      "description": "Ички шартнома.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "спот",
+      "canonical": "contract_form: Спот",
+      "description": "Спот шартнома шакли.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "форвард",
+      "canonical": "contract_form: Форвард",
+      "description": "Форвард шартнома шакли.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "фьючерс",
+      "canonical": "contract_form: Фьючерс",
+      "description": "Фьючерс шартнома шакли.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "бажарилган",
+      "canonical": "status: Исполнен",
+      "description": "Тўланган ва тўлиқ етказилган битим.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "тўланган",
+      "canonical": "status: Оплачен",
+      "description": "Тўланган, ҳали етказилмаган битим.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "бекор қилинган",
+      "canonical": "status: Аннулирован(Не оплачен)",
+      "description": "Амалга ошмаган битим.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "сўм",
+      "canonical": "currency: Узбекский сум",
+      "description": "Ўзбекистон сўми.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "доллар",
+      "canonical": "currency: Доллар США",
+      "description": "АҚШ доллари.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "тонна",
+      "canonical": "unit: тонна",
+      "description": "Масса ўлчов бирлиги.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "килограмм",
+      "canonical": "unit: килограмм",
+      "description": "Масса ўлчов бирлиги.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "литр",
+      "canonical": "unit: литр",
+      "description": "Суюқлик ҳажми бирлиги.",
+      "language": "uz",
+      "script": "cyrillic"
+    },
+    {
+      "term": "дона",
+      "canonical": "unit: штука",
+      "description": "Сони ўлчов бирлиги.",
+      "language": "uz",
+      "script": "cyrillic"
+    }
+  ]
+}

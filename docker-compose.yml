@@ -1,0 +1,176 @@
+name: uzex-data-agent
+
+x-logging: &default-logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+x-backend-env: &backend-env
+  APP_ENV: production
+  APP_SECRET: ${APP_SECRET:?set APP_SECRET in .env}
+  DATASET_CUTOFF_DATE: ${DATASET_CUTOFF_DATE:-2026-10-30}
+  DATABASE_URL: postgresql+psycopg2://uzex_owner:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}@db:5432/${POSTGRES_DB:-uzex}
+  DATABASE_READONLY_URL: postgresql+psycopg2://uzex_reader:${UZEX_READER_PASSWORD:?set UZEX_READER_PASSWORD in .env}@db:5432/${POSTGRES_DB:-uzex}
+  PLANNER_MODE: ${PLANNER_MODE:-local}
+  LLM_PROVIDER: ${LLM_PROVIDER:-groq}
+  LLM_BASE_URL: ${LLM_BASE_URL:-https://api.openai.com/v1}
+  LLM_API_KEY: ${LLM_API_KEY:-}
+  LLM_MODEL: ${LLM_MODEL:-}
+  LLM_PRIMARY_PROVIDER: ${LLM_PRIMARY_PROVIDER:-groq}
+  LLM_PRIMARY_MODEL: ${LLM_PRIMARY_MODEL:-openai/gpt-oss-120b}
+  LLM_FALLBACK_ENABLED: ${LLM_FALLBACK_ENABLED:-true}
+  LLM_FALLBACK_CHAIN: ${LLM_FALLBACK_CHAIN:-}
+  LLM_MODEL_FALLBACK_CHAIN: ${LLM_MODEL_FALLBACK_CHAIN:-}
+  LLM_FALLBACK_MAX_HOPS: ${LLM_FALLBACK_MAX_HOPS:-2}
+  LLM_QUALIFICATION_REQUIRED: ${LLM_QUALIFICATION_REQUIRED:-true}
+  LLM_TIMEOUT_SECONDS: ${LLM_TIMEOUT_SECONDS:-12}
+  LLM_MAX_OUTPUT_TOKENS: ${LLM_MAX_OUTPUT_TOKENS:-900}
+  LLM_RETRY_ONCE: ${LLM_RETRY_ONCE:-true}
+  LLM_BREAKER_FAILURE_THRESHOLD: ${LLM_BREAKER_FAILURE_THRESHOLD:-5}
+  LLM_BREAKER_RECOVERY_SECONDS: ${LLM_BREAKER_RECOVERY_SECONDS:-60}
+  LLM_RATE_LIMIT_SHORT_MAX_SECONDS: ${LLM_RATE_LIMIT_SHORT_MAX_SECONDS:-60}
+  LLM_MAX_CONCURRENT_REQUESTS: ${LLM_MAX_CONCURRENT_REQUESTS:-4}
+  LLM_MAX_QUEUE_WAIT_SECONDS: ${LLM_MAX_QUEUE_WAIT_SECONDS:-5}
+  LLM_INLINE_COOLDOWN_WAIT_SECONDS: ${LLM_INLINE_COOLDOWN_WAIT_SECONDS:-2}
+  LLM_PLAN_CRITIC_MODE: ${LLM_PLAN_CRITIC_MODE:-off}
+  LLM_RAG_ENABLED: ${LLM_RAG_ENABLED:-false}
+  LLM_RAG_TOP_K: ${LLM_RAG_TOP_K:-5}
+  LLM_RAG_MIN_RELEVANCE: ${LLM_RAG_MIN_RELEVANCE:-0.12}
+  GROQ_BASE_URL: ${GROQ_BASE_URL:-https://api.groq.com/openai/v1}
+  GROQ_API_KEY: ${GROQ_API_KEY:-}
+  GROQ_API_KEY_SECONDARY: ${GROQ_API_KEY_SECONDARY:-}
+  GROQ_API_KEY_SECONDARY_SAME_ORG: ${GROQ_API_KEY_SECONDARY_SAME_ORG:-}
+  GROQ_API_KEY_TERTIARY_SAME_ORG: ${GROQ_API_KEY_TERTIARY_SAME_ORG:-}
+  GROQ_ORGANIZATION_SCOPE_ID: ${GROQ_ORGANIZATION_SCOPE_ID:-groq-default-org}
+  GROQ_PROJECT_SCOPE_ID: ${GROQ_PROJECT_SCOPE_ID:-groq-default-project}
+  GROQ_FAILOVER_API_KEYS: ${GROQ_FAILOVER_API_KEYS:-}
+  GROQ_FAILOVER_ORGANIZATION_SCOPE_ID: ${GROQ_FAILOVER_ORGANIZATION_SCOPE_ID:-}
+  GROQ_FAILOVER_PROJECT_SCOPE_ID: ${GROQ_FAILOVER_PROJECT_SCOPE_ID:-}
+  GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
+  GENERAL_MODE_ENABLED: ${GENERAL_MODE_ENABLED:-true}
+  GENERAL_ANSWER_MAX_CHARS: ${GENERAL_ANSWER_MAX_CHARS:-2000}
+  EXPLANATION_MODE: ${EXPLANATION_MODE:-llm}
+  EXPLANATION_MAX_CHARS: ${EXPLANATION_MAX_CHARS:-900}
+  SQL_TIMEOUT_MS: ${SQL_TIMEOUT_MS:-8000}
+  RATE_LIMIT_PER_MINUTE: ${RATE_LIMIT_PER_MINUTE:-30}
+  CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8080}
+
+services:
+  db:
+    logging: *default-logging
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-uzex}
+      POSTGRES_USER: uzex_owner
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      UZEX_READER_PASSWORD: ${UZEX_READER_PASSWORD:?set UZEX_READER_PASSWORD in .env}
+    volumes:
+      # PostgreSQL 18 images expect the mount at /var/lib/postgresql and
+      # place the cluster in a major-version subdirectory.
+      - pgdata:/var/lib/postgresql
+      - ./deploy/postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U uzex_owner -d ${POSTGRES_DB:-uzex}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+  migrate:
+    logging: *default-logging
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    image: uzex-data-agent-backend:local
+    command: ["alembic", "upgrade", "head"]
+    environment: *backend-env
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+
+  import:
+    logging: *default-logging
+    image: uzex-data-agent-backend:local
+    command: ["python", "-m", "importer.import_cli"]
+    environment: *backend-env
+    volumes:
+      - ./data/raw:/app/data/raw:ro
+      - ./uzex_spot_data.zip:/app/uzex_spot_data.zip:ro
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    restart: "no"
+
+  telegram-bot:
+    logging: *default-logging
+    image: uzex-data-agent-backend:local
+    command: ["python", "-m", "app.telegram.bot"]
+    environment:
+      <<: *backend-env
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:?set TELEGRAM_BOT_TOKEN in .env}
+      TELEGRAM_POLL_TIMEOUT: ${TELEGRAM_POLL_TIMEOUT:-30}
+      TELEGRAM_STATE_DB: ${TELEGRAM_STATE_DB:-/app/runtime/telegram_state.sqlite3}
+      TELEGRAM_HEARTBEAT_PATH: ${TELEGRAM_HEARTBEAT_PATH:-/app/runtime/telegram.heartbeat}
+      TELEGRAM_MAX_INPUT_CHARS: ${TELEGRAM_MAX_INPUT_CHARS:-1000}
+      TELEGRAM_RATE_LIMIT_PER_MINUTE: ${TELEGRAM_RATE_LIMIT_PER_MINUTE:-20}
+    volumes:
+      - telegram_state:/app/runtime
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    restart: unless-stopped
+    stop_grace_period: 20s
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import os,sys,time; p='/app/runtime/telegram.heartbeat'; sys.exit(0 if os.path.exists(p) and time.time()-os.path.getmtime(p) < 120 else 1)",
+        ]
+      interval: 30s
+      timeout: 5s
+      start_period: 20s
+      retries: 3
+
+  api:
+    logging: *default-logging
+    image: uzex-data-agent-backend:local
+    environment: *backend-env
+    depends_on:
+      import:
+        condition: service_completed_successfully
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import json,urllib.request; r=urllib.request.urlopen('http://127.0.0.1:8000/api/v1/ready', timeout=4); assert json.load(r)['status']=='ready'",
+        ]
+      interval: 15s
+      timeout: 5s
+      start_period: 20s
+      retries: 5
+    restart: unless-stopped
+
+  web:
+    logging: *default-logging
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    image: uzex-data-agent-frontend:local
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  telegram_state:

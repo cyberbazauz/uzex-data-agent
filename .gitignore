@@ -1,0 +1,56 @@
+# --- Secrets & credentials -------------------------------------------------
+.env
+.env.*
+!.env.example
+backend/.env
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+secrets/
+credentials*
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# --- Node ------------------------------------------------------------------
+node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-error.log*
+
+# --- Data / generated artefacts -------------------------------------------
+data/pgdata/
+data/pg.log
+data/raw/
+data/runtime/
+data/_analyze.py
+data/_csvtest.py
+data/analysis.json
+data/import_stdout.log
+*.log
+*.zip
+*.tgz
+*.tar.gz
+*.dump
+*.sqlite3
+*.db
+
+# --- Editors / OS ----------------------------------------------------------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

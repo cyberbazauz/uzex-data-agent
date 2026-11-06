@@ -1,0 +1,2334 @@
+{
+  "schema_version": "3.0",
+  "counts": {
+    "ambiguous": 20,
+    "follow_up": 30,
+    "free_form": 50,
+    "missing": 20,
+    "ru": 30,
+    "uz": 30
+  },
+  "control": [
+    {
+      "question": "Сколько сделок было в 2024 году?",
+      "expected_status": "FOUND",
+      "expected_value": 106647
+    },
+    {
+      "question": "Сколько сделок было в 2023 году?",
+      "expected_status": "FOUND",
+      "expected_value": 93985
+    },
+    {
+      "question": "Сколько сделок было в 2003 году?",
+      "expected_status": "NOT_FOUND"
+    },
+    {
+      "question": "Есть данные за 2003 год?",
+      "expected_status": "NOT_FOUND"
+    },
+    {
+      "question": "2024-yilda nechta bitim bo'ldi?",
+      "expected_status": "FOUND",
+      "expected_value": 106647
+    },
+    {
+      "question": "2023-yilda nechta bitim bo'ldi?",
+      "expected_status": "FOUND",
+      "expected_value": 93985
+    },
+    {
+      "question": "2024-йилда нечта битим бўлди?",
+      "expected_status": "FOUND",
+      "expected_value": 106647
+    },
+    {
+      "question": "2023-йилда нечта битим бўлди?",
+      "expected_status": "FOUND",
+      "expected_value": 93985
+    },
+    {
+      "question": "2003-yilda nechta bitim bo'ldi?",
+      "expected_status": "NOT_FOUND"
+    },
+    {
+      "question": "2003-йилда нечта битим бўлди?",
+      "expected_status": "NOT_FOUND"
+    }
+  ],
+  "cases": [
+    {
+      "id": "FF-01",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько всего сделок?",
+          "expected_status": "FOUND",
+          "expected_value": 500000
+        }
+      ]
+    },
+    {
+      "id": "FF-02",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2022 году?",
+          "expected_status": "FOUND",
+          "expected_value": 84299
+        }
+      ]
+    },
+    {
+      "id": "FF-03",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2023 году?",
+          "expected_status": "FOUND",
+          "expected_value": 93985
+        }
+      ]
+    },
+    {
+      "id": "FF-04",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году?",
+          "expected_status": "FOUND",
+          "expected_value": 106647
+        }
+      ]
+    },
+    {
+      "id": "FF-05",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2025 году?",
+          "expected_status": "FOUND",
+          "expected_value": 115763
+        }
+      ]
+    },
+    {
+      "id": "FF-06",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2026 году?",
+          "expected_status": "FOUND",
+          "expected_value": 99306
+        }
+      ]
+    },
+    {
+      "id": "FF-07",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько экспортных сделок?",
+          "expected_status": "FOUND",
+          "expected_value": 6590
+        }
+      ]
+    },
+    {
+      "id": "FF-08",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько внутренних сделок в 2024?",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-09",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в январе 2024?",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-10",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок в 1 квартале 2024?",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-11",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок по статусу Исполнен?",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-12",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок у продавца с ИНН 937772675?",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-13",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок по региону Ташкентская область?",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-14",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-15",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок в 2024 году",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-16",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок в долларах",
+          "expected_status": "FOUND",
+          "expected_value": "1137509729.39"
+        }
+      ]
+    },
+    {
+      "id": "FF-17",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок в сумах",
+          "expected_status": "FOUND",
+          "expected_value": "206835219986242.97"
+        }
+      ]
+    },
+    {
+      "id": "FF-18",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Средняя сумма сделки",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-19",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Средняя сумма сделки в 2024",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-20",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Минимальная сумма сделки",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-21",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Максимальная сумма сделки в 2024",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-22",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Объём сделок в 2024",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-23",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Поставлено по единицам измерения",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-24",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Объём экспортных сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-25",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Топ-5 продавцов по количеству сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-26",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Топ-5 покупателей по сумме сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-27",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Топ-5 брокеров продавца по количеству сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-28",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Топ-10 покупателей по количеству сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-29",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Динамика количества сделок по годам",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-30",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок по годам",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-31",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сравни 2023 и 2024 годы по количеству сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-32",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сравни сумму сделок за 2022 и 2026",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-33",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи сделку 100001",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-34",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи контракт 100001",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-35",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи участника \"Diyi Un\" XK",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-36",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи брокера BK002",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-37",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи участника с ИНН 929863757",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-38",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи последние 10 сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-39",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи 5 экспортных сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-40",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи сделки по статусу Оплачен",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-41",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи самую крупную сделку",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-42",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи самую маленькую сделку",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-43",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Какая компания больше всех покупала?",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-44",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Кто больше всего продавал?",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-45",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Есть ли данные за 2024 год?",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-46",
+      "category": "free_form",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Есть ли данные за 2003 год?",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "FF-47",
+      "category": "free_form",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Jami qancha bitim bor?",
+          "expected_status": "FOUND",
+          "expected_value": 500000
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "FF-48",
+      "category": "free_form",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2024-yilda nechta bitim bo'ldi?",
+          "expected_status": "FOUND",
+          "expected_value": 106647
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "FF-49",
+      "category": "free_form",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Bitimlar summasi dollarda qancha?",
+          "expected_status": "FOUND",
+          "expected_value": "1137509729.39"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "FF-50",
+      "category": "free_form",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Eng katta bitimni ko'rsat",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "FU-01",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "А за 2023?",
+          "expected_status": "FOUND",
+          "expected_value": 93985,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-02",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2023 году?",
+          "expected_status": "FOUND",
+          "expected_value": 93985,
+          "expect_context": false
+        },
+        {
+          "question": "А за 2024?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-03",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "А по месяцам?",
+          "expected_status": "FOUND",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-04",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "А по кварталам?",
+          "expected_status": "UNSUPPORTED",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-05",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок в 2024 году",
+          "expected_status": "FOUND",
+          "expect_context": false
+        },
+        {
+          "question": "А в долларах?",
+          "expected_status": "FOUND",
+          "expected_value": "219306395.35",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-06",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок в долларах",
+          "expected_status": "FOUND",
+          "expected_value": "1137509729.39",
+          "expect_context": false
+        },
+        {
+          "question": "А в сумах?",
+          "expected_status": "FOUND",
+          "expected_value": "206835219986242.97",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-07",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок за 2024?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "А теперь только экспортные",
+          "expected_status": "FOUND",
+          "expected_value": 1327,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-08",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько экспортных сделок?",
+          "expected_status": "FOUND",
+          "expected_value": 6590,
+          "expect_context": false
+        },
+        {
+          "question": "А теперь только внутренние",
+          "expected_status": "FOUND",
+          "expected_value": 493410,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-09",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "А если взять предыдущий год?",
+          "expected_status": "FOUND",
+          "expected_value": 93985,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-10",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2025 году?",
+          "expected_status": "FOUND",
+          "expected_value": 115763,
+          "expect_context": false
+        },
+        {
+          "question": "А предыдущий год?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-11",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Топ-10 покупателей по количеству сделок",
+          "expected_status": "FOUND",
+          "expect_context": false
+        },
+        {
+          "question": "Сколько у неё сделок?",
+          "expected_status": "NEEDS_CLARIFICATION",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-12",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Топ-10 продавцов по количеству сделок",
+          "expected_status": "FOUND",
+          "expect_context": false
+        },
+        {
+          "question": "Сколько у неё сделок?",
+          "expected_status": "NEEDS_CLARIFICATION",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-13",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи участника \"Diyi Un\" XK",
+          "expected_status": "FOUND",
+          "expect_context": false
+        },
+        {
+          "question": "Сколько у неё сделок?",
+          "expected_status": "FOUND",
+          "expected_value": 1028,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-14",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи участника с ИНН 929863757",
+          "expected_status": "FOUND",
+          "expect_context": false
+        },
+        {
+          "question": "Сколько у него сделок?",
+          "expected_status": "FOUND",
+          "expected_value": 5,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-15",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "Сколько всего сделок?",
+          "expected_status": "FOUND",
+          "expected_value": 500000,
+          "expect_context": false
+        }
+      ]
+    },
+    {
+      "id": "FU-16",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "Покажи динамику по годам",
+          "expected_status": "FOUND",
+          "expect_context": false
+        }
+      ]
+    },
+    {
+      "id": "FU-17",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "А в 2025?",
+          "expected_status": "FOUND",
+          "expected_value": 115763,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-18",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок в 2024 году",
+          "expected_status": "FOUND",
+          "expect_context": false
+        },
+        {
+          "question": "А за 2023 год?",
+          "expected_status": "FOUND",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-19",
+      "category": "follow_up",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2024-yilda nechta bitim bo'ldi?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "2023-chi?",
+          "expected_status": "FOUND",
+          "expected_value": 93985,
+          "expect_context": true
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "FU-20",
+      "category": "follow_up",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2024-yilda nechta bitim bo'ldi?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "Va 2025-yil?",
+          "expected_status": "FOUND",
+          "expected_value": 115763,
+          "expect_context": true
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "FU-21",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок в 2024 году",
+          "expected_status": "FOUND",
+          "expect_context": false
+        },
+        {
+          "question": "А в сумах?",
+          "expected_status": "FOUND",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-22",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько внутренних сделок в 2024",
+          "expected_status": "FOUND",
+          "expected_value": 105320,
+          "expect_context": false
+        },
+        {
+          "question": "А экспортных?",
+          "expected_status": "FOUND",
+          "expected_value": 1327,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-23",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Топ-5 продавцов по количеству сделок",
+          "expected_status": "FOUND",
+          "expect_context": false
+        },
+        {
+          "question": "А покупателей?",
+          "expected_status": "FOUND",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-24",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "а за 1900?",
+          "expected_status": "NOT_FOUND",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-25",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "а за 2003?",
+          "expected_status": "NOT_FOUND",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-26",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи самую крупную сделку",
+          "expected_status": "FOUND",
+          "expect_context": false
+        },
+        {
+          "question": "А самую маленькую?",
+          "expected_status": "FOUND",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-27",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Средняя сумма сделки в 2024",
+          "expected_status": "FOUND",
+          "expect_context": false
+        },
+        {
+          "question": "А в 2023?",
+          "expected_status": "FOUND",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-28",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Динамика количества сделок по годам",
+          "expected_status": "FOUND",
+          "expect_context": false
+        },
+        {
+          "question": "Только экспортные",
+          "expected_status": "FOUND",
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-29",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок у продавца с ИНН 937772675",
+          "expected_status": "FOUND",
+          "expected_value": 1028,
+          "expect_context": false
+        },
+        {
+          "question": "А у покупателя с ИНН 929863757?",
+          "expected_status": "FOUND",
+          "expected_value": 5,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "FU-30",
+      "category": "follow_up",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году?",
+          "expected_status": "FOUND",
+          "expected_value": 106647,
+          "expect_context": false
+        },
+        {
+          "question": "А за 2026?",
+          "expected_status": "FOUND",
+          "expected_value": 99306,
+          "expect_context": true
+        }
+      ]
+    },
+    {
+      "id": "RU-01",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько всего было сделок?",
+          "expected_status": "FOUND",
+          "expected_value": 500000
+        }
+      ]
+    },
+    {
+      "id": "RU-02",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Подсчитай количество сделок",
+          "expected_status": "FOUND",
+          "expected_value": 500000
+        }
+      ]
+    },
+    {
+      "id": "RU-03",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок в 2024 г.",
+          "expected_status": "FOUND",
+          "expected_value": 106647
+        }
+      ]
+    },
+    {
+      "id": "RU-04",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок за 2024 год было?",
+          "expected_status": "FOUND",
+          "expected_value": 106647
+        }
+      ]
+    },
+    {
+      "id": "RU-05",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма всех сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-06",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Общая сумма сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-07",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок долларах",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-08",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько экспортных сделок было",
+          "expected_status": "FOUND",
+          "expected_value": 6590
+        }
+      ]
+    },
+    {
+      "id": "RU-09",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько внутренних сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-10",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Топ 5 продавцов",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-11",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Пять крупнейших покупателей",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-12",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Динамика сделок по месяцам",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-13",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сравни количество сделок 2022 и 2026",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-14",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи сделку номер 100001",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-15",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Найди контракт 100001",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-16",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Найди участника по ИНН 929863757",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-17",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Информация о брокере BK002",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-18",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько записей о сделках",
+          "expected_status": "FOUND",
+          "expected_value": 500000
+        }
+      ]
+    },
+    {
+      "id": "RU-19",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Есть ли сделки в 2024 году",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-20",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Имеются ли данные за 2003 год",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-21",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Какое количество сделок в 2023",
+          "expected_status": "FOUND",
+          "expected_value": 93985
+        }
+      ]
+    },
+    {
+      "id": "RU-22",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Чему равна сумма сделок в 2024",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-23",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Средняя сумма по сделкам",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-24",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Максимальная сделка 2024",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-25",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Минимальная сделка",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-26",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Объём сделок 2024",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-27",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Поставки по единицам измерения",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-28",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Последние 10 сделок",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "RU-29",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в 2024 году всего",
+          "expected_status": "FOUND",
+          "expected_value": 106647
+        }
+      ]
+    },
+    {
+      "id": "RU-30",
+      "category": "ru",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок в 2024 по региону Ташкентская область",
+          "expected_status": "FOUND"
+        }
+      ]
+    },
+    {
+      "id": "UZ-01",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Jami nechta bitim bor?",
+          "expected_status": "FOUND",
+          "expected_value": 500000
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-02",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2022-yilda nechta bitim bo'ldi?",
+          "expected_status": "FOUND",
+          "expected_value": 84299
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-03",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2023-yilda nechta bitim bo'ldi?",
+          "expected_status": "FOUND",
+          "expected_value": 93985
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-04",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2024-yilda nechta bitim bo'ldi?",
+          "expected_status": "FOUND",
+          "expected_value": 106647
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-05",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2025-yilda nechta bitim bo'ldi?",
+          "expected_status": "FOUND",
+          "expected_value": 115763
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-06",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2026-yilda nechta bitim bo'ldi?",
+          "expected_status": "FOUND",
+          "expected_value": 99306
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-07",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2027-yilda nechta bitim bo'ldi?",
+          "expected_status": "NOT_FOUND"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-08",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Bitimlar summasi dollarda qancha?",
+          "expected_status": "FOUND",
+          "expected_value": "1137509729.39"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-09",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Bitimlar summasi so'mda qancha?",
+          "expected_status": "FOUND",
+          "expected_value": "206835219986242.97"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-10",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Eksport bitimlari soni qancha?",
+          "expected_status": "FOUND",
+          "expected_value": 6590
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-11",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Eng katta bitimni ko'rsat",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-12",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Eng kichik bitimni ko'rsat",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-13",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2024-yil uchun bitimlar dinamikasi",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-14",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Eng ko'p sotgan kompaniya qaysi?",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-15",
+      "category": "uz",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Eng ko'p sotib olgan kompaniya qaysi?",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "UZ-16",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "Жами қанча битим бор?",
+          "expected_status": "FOUND",
+          "expected_value": 500000
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-17",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "2023-йилда нечта битим бўлди?",
+          "expected_status": "FOUND",
+          "expected_value": 93985
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-18",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "2024-йилда нечта битим бўлди?",
+          "expected_status": "FOUND",
+          "expected_value": 106647
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-19",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "2027-йилда нечта битим бўлди?",
+          "expected_status": "NOT_FOUND"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-20",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "Битимлар суммаси долларда қанча?",
+          "expected_status": "FOUND",
+          "expected_value": "1137509729.39"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-21",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "Битимлар суммаси сўмда қанча?",
+          "expected_status": "FOUND",
+          "expected_value": "206835219986242.97"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-22",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "Экспорт битимлари сони қанча?",
+          "expected_status": "FOUND",
+          "expected_value": 6590
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-23",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "Энг катта битимни кўрсат",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-24",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "Энг кичик битимни кўрсат",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-25",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "2024-йил учун битимлар динамикаси",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-26",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "Энг кўп сотган компания қайси?",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-27",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "Энг кўп сотиб олган компания қайси?",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-28",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "Битим рақами 100001",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-29",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "Шартнома рақами 100001",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "UZ-30",
+      "category": "uz",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "2023- ва 2024-йилларни битимлар сони бўйича таққосла",
+          "expected_status": "FOUND"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "AM-01",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было в Ташкенте?",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-02",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи брокера KAHIR",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-03",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок у компании sujo plus mchj",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-04",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи участника sujo plus mchj",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-05",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Средняя цена карбамида",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-06",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Топ-5 компаний по количеству сделок",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-07",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок компаний из Ташкента",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-08",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок по товару карбамид",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-09",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок по региону Ташкент",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-10",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи сделки по региону Ташкент",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-11",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок у брокера",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-12",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок у брокера",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-13",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Поставлено тонн карбамида в 2024",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-14",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Средняя цена карбамида в 2024",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-15",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок по товару карбамид в 2024",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-16",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Топ-5 компаний по сумме сделок",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-17",
+      "category": "ambiguous",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "Toshkentda nechta bitim bo'ldi?",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "AM-18",
+      "category": "ambiguous",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "Тошкентда нечта битим бўлди?",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "AM-19",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок у компании с ИНН 929863757",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "AM-20",
+      "category": "ambiguous",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи брокера продавца",
+          "expected_status": "NEEDS_CLARIFICATION"
+        }
+      ]
+    },
+    {
+      "id": "MS-01",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Есть данные за 2003 год?",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-02",
+      "category": "missing",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2003-yilda nechta bitim bo'ldi?",
+          "expected_status": "NOT_FOUND"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "MS-03",
+      "category": "missing",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "2003-йилда нечта битим бўлди?",
+          "expected_status": "NOT_FOUND"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "MS-04",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок в 1900 году?",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-05",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок в 2100 году?",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-06",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок в 2027 году?",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-07",
+      "category": "missing",
+      "language": "uz_latn",
+      "turns": [
+        {
+          "question": "2027-yilda nechta bitim bo'ldi?",
+          "expected_status": "NOT_FOUND"
+        }
+      ],
+      "locale": "uz_latn"
+    },
+    {
+      "id": "MS-08",
+      "category": "missing",
+      "language": "uz_cyrl",
+      "turns": [
+        {
+          "question": "2027-йилда нечта битим бўлди?",
+          "expected_status": "NOT_FOUND"
+        }
+      ],
+      "locale": "uz_cyrl"
+    },
+    {
+      "id": "MS-09",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи сделку 999999",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-10",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи контракт 999999",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-11",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи брокера BK999",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-12",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи участника Несуществующая Компания",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-13",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи участника с ИНН 000000000",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-14",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи товар Несуществующий Товар",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-15",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сумма сделок в 2027 году",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-16",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Средняя сумма сделки в 2027",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-17",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Максимальная сумма сделки в 2027",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-18",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Объём сделок в 2027",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-19",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Покажи сделки по статусу Не подписан в 2024",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "id": "MS-20",
+      "category": "missing",
+      "language": "ru",
+      "turns": [
+        {
+          "question": "Сколько сделок было 01.01.2024",
+          "expected_status": "NOT_FOUND"
+        }
+      ]
+    }
+  ]
+}

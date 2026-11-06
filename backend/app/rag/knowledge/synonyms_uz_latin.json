@@ -1,0 +1,293 @@
+{
+  "language": "uz",
+  "script": "latin",
+  "terms": [
+    {
+      "term": "bitim",
+      "canonical": "deals",
+      "description": "Bitimlar reyestri yozuvi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "bitimlar",
+      "canonical": "deals",
+      "description": "Bitimlar reyestri yozuvlari.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "shartnoma",
+      "canonical": "contracts",
+      "description": "Shartnoma kartochkasi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "kompaniya",
+      "canonical": "participants",
+      "description": "Savdo ishtirokchisi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "ishtirokchi",
+      "canonical": "participants",
+      "description": "Sotuvchi yoki xaridor.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "sotuvchi",
+      "canonical": "seller",
+      "description": "Sotuvchi tomoni.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "xaridor",
+      "canonical": "buyer",
+      "description": "Xaridor tomoni.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "broker",
+      "canonical": "brokers",
+      "description": "Brokerlik idorasi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "dollar kursi",
+      "canonical": "usd_rates",
+      "description": "Bir AQSh dollari uchun so'm kursi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "nechta",
+      "canonical": "count",
+      "description": "Miqdor haqidagi savol.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "qancha",
+      "canonical": "count",
+      "description": "Miqdor haqidagi savol.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "soni",
+      "canonical": "count",
+      "description": "Yozuvlar yoki bitimlar soni.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "summa",
+      "canonical": "sum_amount",
+      "description": "Bitimlarning pul summasi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "qiymat",
+      "canonical": "sum_amount",
+      "description": "Bitimlarning pul qiymati.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "jami",
+      "canonical": "sum_amount",
+      "description": "Umumiy yig'indi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "o'rtacha",
+      "canonical": "average",
+      "description": "O'rtacha qiymat.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "top",
+      "canonical": "top_n",
+      "description": "Yetakchilar reytingi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "reyting",
+      "canonical": "top_n",
+      "description": "Tartiblangan ro'yxat.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "eng ko'p",
+      "canonical": "top_n",
+      "description": "Metrika bo'yicha eng yuqori.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "dinamika",
+      "canonical": "trend",
+      "description": "Davrlar bo'yicha o'zgarish.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "trend",
+      "canonical": "trend",
+      "description": "Davrlar bo'yicha o'zgarish.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "taqqosla",
+      "canonical": "compare",
+      "description": "Ikki davrni solishtirish.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "solishtir",
+      "canonical": "compare",
+      "description": "Ikki davrni solishtirish.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "hajm",
+      "canonical": "sum_volume",
+      "description": "O'lchov birligidagi jismoniy hajm.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "yetkazilgan",
+      "canonical": "delivered",
+      "description": "Fakt bo'yicha yetkazilgan miqdor.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "ombor hududi",
+      "canonical": "warehouse_region",
+      "description": "Tovar saqlanadigan hudud, kompaniya hududi emas.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "kompaniya hududi",
+      "canonical": "company_region",
+      "description": "Kompaniya ro'yxatdan o'tgan hudud, ombor emas.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "eksport",
+      "canonical": "contract_type: Экспортный",
+      "description": "Eksport shartnomasi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "ichki",
+      "canonical": "contract_type: Внутренний",
+      "description": "Ichki shartnoma.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "spot",
+      "canonical": "contract_form: Спот",
+      "description": "Spot shartnoma shakli.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "forvard",
+      "canonical": "contract_form: Форвард",
+      "description": "Forvard shartnoma shakli.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "fyuchers",
+      "canonical": "contract_form: Фьючерс",
+      "description": "Fyuchers shartnoma shakli.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "bajarilgan",
+      "canonical": "status: Исполнен",
+      "description": "To'langan va to'liq yetkazilgan bitim.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "to'langan",
+      "canonical": "status: Оплачен",
+      "description": "To'langan, hali yetkazilmagan bitim.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "bekor qilingan",
+      "canonical": "status: Аннулирован(Не оплачен)",
+      "description": "Amalga oshmagan bitim.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "so'm",
+      "canonical": "currency: Узбекский сум",
+      "description": "O'zbekiston so'mi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "dollar",
+      "canonical": "currency: Доллар США",
+      "description": "AQSh dollari.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "tonna",
+      "canonical": "unit: тонна",
+      "description": "Massa o'lchov birligi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "kilogramm",
+      "canonical": "unit: килограмм",
+      "description": "Massa o'lchov birligi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "litr",
+      "canonical": "unit: литр",
+      "description": "Suyuqlik hajmi birligi.",
+      "language": "uz",
+      "script": "latin"
+    },
+    {
+      "term": "dona",
+      "canonical": "unit: штука",
+      "description": "Soni o'lchov birligi.",
+      "language": "uz",
+      "script": "latin"
+    }
+  ]
+}

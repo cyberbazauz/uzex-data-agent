@@ -1,0 +1,275 @@
+{
+  "generated_at": "2026-11-05T12:41:10.583016+00:00",
+  "mode": "retrieval_only",
+  "live_calls": false,
+  "status": "PASS",
+  "top_k": 5,
+  "min_relevance": 0.12,
+  "index": {
+    "chunks": 189,
+    "rejected": [],
+    "source_type_counts": {
+      "BUSINESS_RULE": 20,
+      "FIELD_DEFINITION": 26,
+      "LANGUAGE_SYNONYM": 136,
+      "QUERY_PATTERN": 7
+    },
+    "all_approved": true,
+    "golden_fact_in_chunks": false
+  },
+  "cases_total": 8,
+  "cases_passed": 8,
+  "golden_fact_leaks": 0,
+  "language_isolation_failures": 0,
+  "missing_expected_sources": 0,
+  "untrusted_marker_failures": 0,
+  "results": [
+    {
+      "id": "ru_count_2024",
+      "question": "Сколько сделок было в 2024 году?",
+      "language": "ru",
+      "script": "cyrillic",
+      "hits": 5,
+      "source_ids": [
+        "uzex_query_examples",
+        "uzex_synonyms_ru",
+        "uzex_query_examples",
+        "uzex_data_dictionary",
+        "uzex_source_readme"
+      ],
+      "source_types": [
+        "QUERY_PATTERN",
+        "LANGUAGE_SYNONYM",
+        "QUERY_PATTERN",
+        "FIELD_DEFINITION",
+        "BUSINESS_RULE"
+      ],
+      "scores": [
+        0.0164,
+        0.0164,
+        0.0161,
+        0.0159,
+        0.0156
+      ],
+      "context_chars": 2198,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "uz_latn_count_2025",
+      "question": "2025-yilda nechta bitim bo'ldi?",
+      "language": "uz",
+      "script": "latin",
+      "hits": 5,
+      "source_ids": [
+        "uzex_synonyms_uz_latin",
+        "uzex_query_examples",
+        "uzex_source_readme",
+        "uzex_synonyms_uz_latin",
+        "uzex_source_readme"
+      ],
+      "source_types": [
+        "LANGUAGE_SYNONYM",
+        "QUERY_PATTERN",
+        "BUSINESS_RULE",
+        "LANGUAGE_SYNONYM",
+        "BUSINESS_RULE"
+      ],
+      "scores": [
+        0.0313,
+        0.0164,
+        0.0161,
+        0.0161,
+        0.0159
+      ],
+      "context_chars": 2122,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "uz_cyrl_count_2025",
+      "question": "2025-йилда нечта битим бўлди?",
+      "language": "uz",
+      "script": "cyrillic",
+      "hits": 3,
+      "source_ids": [
+        "uzex_synonyms_uz_cyrillic",
+        "uzex_query_examples",
+        "uzex_synonyms_uz_cyrillic"
+      ],
+      "source_types": [
+        "LANGUAGE_SYNONYM",
+        "QUERY_PATTERN",
+        "LANGUAGE_SYNONYM"
+      ],
+      "scores": [
+        0.0325,
+        0.0164,
+        0.0161
+      ],
+      "context_chars": 1414,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "ru_export_usd_sum",
+      "question": "Какая общая сумма экспортных сделок в долларах?",
+      "language": "ru",
+      "script": "cyrillic",
+      "hits": 5,
+      "source_ids": [
+        "uzex_synonyms_ru",
+        "uzex_source_readme",
+        "uzex_source_readme",
+        "uzex_synonyms_ru",
+        "uzex_source_readme"
+      ],
+      "source_types": [
+        "LANGUAGE_SYNONYM",
+        "BUSINESS_RULE",
+        "BUSINESS_RULE",
+        "LANGUAGE_SYNONYM",
+        "BUSINESS_RULE"
+      ],
+      "scores": [
+        0.0318,
+        0.0164,
+        0.0161,
+        0.0161,
+        0.0159
+      ],
+      "context_chars": 2654,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "ru_top_sellers",
+      "question": "Топ-5 продавцов по количеству сделок",
+      "language": "ru",
+      "script": "cyrillic",
+      "hits": 5,
+      "source_ids": [
+        "uzex_synonyms_ru",
+        "uzex_query_examples",
+        "uzex_source_readme",
+        "uzex_data_dictionary",
+        "uzex_source_readme"
+      ],
+      "source_types": [
+        "LANGUAGE_SYNONYM",
+        "QUERY_PATTERN",
+        "BUSINESS_RULE",
+        "FIELD_DEFINITION",
+        "BUSINESS_RULE"
+      ],
+      "scores": [
+        0.0301,
+        0.0164,
+        0.0161,
+        0.0159,
+        0.0156
+      ],
+      "context_chars": 2385,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "ru_volume_by_unit",
+      "question": "Объём поставок по единицам измерения",
+      "language": "ru",
+      "script": "cyrillic",
+      "hits": 5,
+      "source_ids": [
+        "uzex_synonyms_ru",
+        "uzex_synonyms_ru",
+        "uzex_source_readme",
+        "uzex_source_readme",
+        "uzex_source_readme"
+      ],
+      "source_types": [
+        "LANGUAGE_SYNONYM",
+        "LANGUAGE_SYNONYM",
+        "BUSINESS_RULE",
+        "BUSINESS_RULE",
+        "BUSINESS_RULE"
+      ],
+      "scores": [
+        0.0313,
+        0.0164,
+        0.0161,
+        0.0159,
+        0.0156
+      ],
+      "context_chars": 2872,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "ru_warehouse_region_rule",
+      "question": "Что такое регион склада?",
+      "language": "ru",
+      "script": "cyrillic",
+      "hits": 5,
+      "source_ids": [
+        "uzex_synonyms_ru",
+        "uzex_source_readme",
+        "uzex_source_readme",
+        "uzex_data_dictionary",
+        "uzex_data_dictionary"
+      ],
+      "source_types": [
+        "LANGUAGE_SYNONYM",
+        "BUSINESS_RULE",
+        "BUSINESS_RULE",
+        "FIELD_DEFINITION",
+        "FIELD_DEFINITION"
+      ],
+      "scores": [
+        0.0313,
+        0.0164,
+        0.0161,
+        0.0159,
+        0.0156
+      ],
+      "context_chars": 3149,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "id": "ru_missing_entity",
+      "question": "Покажи участника Несуществующая Компания",
+      "language": "ru",
+      "script": "cyrillic",
+      "hits": 5,
+      "source_ids": [
+        "uzex_synonyms_ru",
+        "uzex_synonyms_ru",
+        "uzex_data_dictionary",
+        "uzex_data_dictionary",
+        "uzex_source_readme"
+      ],
+      "source_types": [
+        "LANGUAGE_SYNONYM",
+        "LANGUAGE_SYNONYM",
+        "FIELD_DEFINITION",
+        "FIELD_DEFINITION",
+        "BUSINESS_RULE"
+      ],
+      "scores": [
+        0.0325,
+        0.0313,
+        0.0164,
+        0.0159,
+        0.0156
+      ],
+      "context_chars": 2169,
+      "passed": true,
+      "failures": []
+    }
+  ],
+  "limitations": [
+    "Retrieval scores are interpretation hints, not factual evidence.",
+    "This mode does not call a model and cannot prove answer accuracy.",
+    "RAG remains disabled by default; enable only after a live RAG_OFF/RAG_ON run shows no regressions."
+  ]
+}

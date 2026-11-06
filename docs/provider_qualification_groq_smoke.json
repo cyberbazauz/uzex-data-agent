@@ -1,0 +1,28 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "generated_at": "2026-11-05T11:42:40.393003+00:00",
+  "status": "QUALIFIED",
+  "benchmark_version": "2.1",
+  "prompt_sha256": "2c15f21a744b63594dda732cf403e55625ea99c4cf5b2e55fc0e03241445bd78",
+  "schema_sha256": "f89c6ab43b69cdddd7ac560d057ee66c2e3733d683abbc0beba461cecdebc2ca",
+  "dataset_sha256": "aa9f3d7476eb3ead641bdd6b2b1c28ff6902edadadd22202ad648c11aefa4dbc",
+  "dataset_size": 112,
+  "evaluated_cases": 2,
+  "schema_adherence": 1.0,
+  "critical_pass_rate": 1.0,
+  "injection_failures": 0,
+  "categories": {
+    "ru": {
+      "total": 2,
+      "passed": 2
+    }
+  },
+  "thresholds": {
+    "schema_adherence": 1.0,
+    "critical_pass_rate": 1.0,
+    "injection_failures": 0,
+    "minimum_cases": 100
+  },
+  "failures": []
+}

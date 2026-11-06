@@ -1,0 +1,384 @@
+{
+  "language": "ru",
+  "script": "cyrillic",
+  "terms": [
+    {
+      "term": "сделка",
+      "canonical": "deals",
+      "description": "Запись реестра сделок.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "сделки",
+      "canonical": "deals",
+      "description": "Записи реестра сделок.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "битим",
+      "canonical": "deals",
+      "description": "Узбекское обозначение сделки.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "контракт",
+      "canonical": "contracts",
+      "description": "Карточка контракта.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "шартнома",
+      "canonical": "contracts",
+      "description": "Узбекское обозначение контракта.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "компания",
+      "canonical": "participants",
+      "description": "Участник торгов.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "участник",
+      "canonical": "participants",
+      "description": "Продавец или покупатель.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "поставщик",
+      "canonical": "participants",
+      "description": "Компания-продавец.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "контрагент",
+      "canonical": "participants",
+      "description": "Вторая сторона сделки.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "брокер",
+      "canonical": "brokers",
+      "description": "Брокерская контора.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "курс доллара",
+      "canonical": "usd_rates",
+      "description": "Курс сума за один доллар США.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "сколько",
+      "canonical": "count",
+      "description": "Вопрос о количестве.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "количество",
+      "canonical": "count",
+      "description": "Число записей или сделок.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "нечта",
+      "canonical": "count",
+      "description": "Узбекский вопрос о количестве.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "қанча",
+      "canonical": "count",
+      "description": "Узбекский вопрос о количестве.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "сумма",
+      "canonical": "sum_amount",
+      "description": "Денежная сумма сделок.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "стоимость",
+      "canonical": "sum_amount",
+      "description": "Денежное выражение сделок.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "оборот",
+      "canonical": "sum_amount",
+      "description": "Суммарный денежный оборот.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "средняя",
+      "canonical": "average",
+      "description": "Среднее значение.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "ўртача",
+      "canonical": "average",
+      "description": "Среднее значение.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "топ",
+      "canonical": "top_n",
+      "description": "Рейтинг нескольких лидеров.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "лидер",
+      "canonical": "top_n",
+      "description": "Первый по выбранной метрике.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "рейтинг",
+      "canonical": "top_n",
+      "description": "Упорядоченный список.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "динамика",
+      "canonical": "trend",
+      "description": "Изменение по периодам.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "тренд",
+      "canonical": "trend",
+      "description": "Изменение по периодам.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "сравнение",
+      "canonical": "compare",
+      "description": "Сопоставление двух периодов.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "разница",
+      "canonical": "compare",
+      "description": "Разница между периодами.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "объём",
+      "canonical": "sum_volume",
+      "description": "Физический объём в единицах измерения.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "ҳажм",
+      "canonical": "sum_volume",
+      "description": "Физический объём в единицах измерения.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "поставлено",
+      "canonical": "delivered",
+      "description": "Фактически поставленное количество.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "yetkazilgan",
+      "canonical": "delivered",
+      "description": "Фактически поставленное количество.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "продавец",
+      "canonical": "seller",
+      "description": "Сторона продавца.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "сотувчи",
+      "canonical": "seller",
+      "description": "Сторона продавца.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "покупатель",
+      "canonical": "buyer",
+      "description": "Сторона покупателя.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "харидор",
+      "canonical": "buyer",
+      "description": "Сторона покупателя.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "регион склада",
+      "canonical": "warehouse_region",
+      "description": "Регион хранения товара, не регион компании.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "регион компании",
+      "canonical": "company_region",
+      "description": "Регион регистрации компании, не склад.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "экспортный",
+      "canonical": "contract_type: Экспортный",
+      "description": "Экспортный контракт.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "экспорт",
+      "canonical": "contract_type: Экспортный",
+      "description": "Экспортный контракт.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "внутренний",
+      "canonical": "contract_type: Внутренний",
+      "description": "Внутренний контракт.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "спот",
+      "canonical": "contract_form: Спот",
+      "description": "Форма контракта спот.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "форвард",
+      "canonical": "contract_form: Форвард",
+      "description": "Форма контракта форвард.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "фьючерс",
+      "canonical": "contract_form: Фьючерс",
+      "description": "Форма контракта фьючерс.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "исполнен",
+      "canonical": "status: Исполнен",
+      "description": "Сделка оплачена и поставлена полностью.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "оплачен",
+      "canonical": "status: Оплачен",
+      "description": "Сделка оплачена, товар ещё не поставлен.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "аннулирован",
+      "canonical": "status: Аннулирован(Не оплачен)",
+      "description": "Сделка не состоялась.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "сум",
+      "canonical": "currency: Узбекский сум",
+      "description": "Валюта Узбекистана.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "so'm",
+      "canonical": "currency: Узбекский сум",
+      "description": "Валюта Узбекистана.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "доллар",
+      "canonical": "currency: Доллар США",
+      "description": "Доллар США.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "usd",
+      "canonical": "currency: Доллар США",
+      "description": "Доллар США.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "тонна",
+      "canonical": "unit: тонна",
+      "description": "Единица измерения массы.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "килограмм",
+      "canonical": "unit: килограмм",
+      "description": "Единица измерения массы.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "литр",
+      "canonical": "unit: литр",
+      "description": "Единица измерения объёма жидкости.",
+      "language": "ru",
+      "script": "cyrillic"
+    },
+    {
+      "term": "штука",
+      "canonical": "unit: штука",
+      "description": "Единица измерения количества.",
+      "language": "ru",
+      "script": "cyrillic"
+    }
+  ]
+}

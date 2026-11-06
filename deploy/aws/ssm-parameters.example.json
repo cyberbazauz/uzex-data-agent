@@ -1,0 +1,119 @@
+{
+  "$comment": "Schema/manifest of the SSM Parameter Store entries required by UZEX Data Agent V2.1. This file contains NO secret value. Populate values interactively with deploy/aws/publish-ssm-parameters.sh.",
+  "region": "REPLACE_WITH_APPROVED_REGION",
+  "prefix": "/uzex/prod",
+  "parameters": [
+    {
+      "name": "/uzex/prod/postgres_db",
+      "type": "String",
+      "required": true,
+      "example": "uzex",
+      "purpose": "PostgreSQL database name"
+    },
+    {
+      "name": "/uzex/prod/postgres_password",
+      "type": "SecureString",
+      "required": true,
+      "purpose": "PostgreSQL owner password; used only by the db and migration/import services"
+    },
+    {
+      "name": "/uzex/prod/reader_password",
+      "type": "SecureString",
+      "required": true,
+      "purpose": "Password for the SELECT-only uzex_reader runtime role"
+    },
+    {
+      "name": "/uzex/prod/app_secret",
+      "type": "SecureString",
+      "required": true,
+      "purpose": "Application secret used by the backend"
+    },
+    {
+      "name": "/uzex/prod/groq_api_key",
+      "type": "SecureString",
+      "required": true,
+      "purpose": "Groq primary planner key"
+    },
+    {
+      "name": "/uzex/prod/groq_api_key_secondary",
+      "type": "SecureString",
+      "required": false,
+      "purpose": "Same-scope credential redundancy; never used to bypass HTTP 429"
+    },
+    {
+      "name": "/uzex/prod/groq_api_key_secondary_same_org",
+      "type": "SecureString",
+      "required": false,
+      "purpose": "Same-scope credential redundancy; never used to bypass HTTP 429"
+    },
+    {
+      "name": "/uzex/prod/groq_api_key_tertiary_same_org",
+      "type": "SecureString",
+      "required": false,
+      "purpose": "Same-scope credential redundancy; never used to bypass HTTP 429"
+    },
+    {
+      "name": "/uzex/prod/groq_organization_scope_id",
+      "type": "String",
+      "required": true,
+      "example": "REPLACE_WITH_REAL_GROQ_ORG_ID",
+      "purpose": "Real shared Groq organization scope; placeholders are rejected by render-env.sh"
+    },
+    {
+      "name": "/uzex/prod/groq_project_scope_id",
+      "type": "String",
+      "required": true,
+      "example": "REPLACE_WITH_REAL_GROQ_PROJECT_ID",
+      "purpose": "Real shared Groq project scope; placeholders are rejected by render-env.sh"
+    },
+    {
+      "name": "/uzex/prod/planner_mode",
+      "type": "String",
+      "required": false,
+      "example": "llm",
+      "purpose": "local | llm; enable llm only after the 112-case qualification passes"
+    },
+    {
+      "name": "/uzex/prod/web_port",
+      "type": "String",
+      "required": false,
+      "example": "8080",
+      "purpose": "Public web port published by the web container; 80/443 are the only public ports"
+    },
+    {
+      "name": "/uzex/prod/cors_origins",
+      "type": "String",
+      "required": false,
+      "example": "https://example.invalid",
+      "purpose": "Comma-separated browser origins allowed to call the API directly"
+    },
+    {
+      "name": "/uzex/prod/dataset_cutoff_date",
+      "type": "String",
+      "required": false,
+      "example": "2026-10-30",
+      "purpose": "Dataset cutoff enforced by evidence validation"
+    },
+    {
+      "name": "/uzex/prod/llm_fallback_chain",
+      "type": "String",
+      "required": false,
+      "example": "",
+      "purpose": "provider:model list; empty by default because unqualified fallbacks are never built"
+    },
+    {
+      "name": "/uzex/prod/llm_plan_critic_mode",
+      "type": "String",
+      "required": false,
+      "example": "off",
+      "purpose": "off | risk_based; risk_based may only narrow a plan, never add facts"
+    },
+    {
+      "name": "/uzex/prod/llm_rag_enabled",
+      "type": "String",
+      "required": false,
+      "example": "false",
+      "purpose": "true | false; enable only after the RAG ON/OFF evaluation proves improvement"
+    }
+  ]
+}
